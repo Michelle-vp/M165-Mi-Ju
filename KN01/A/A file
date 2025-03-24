@@ -1,5 +1,5 @@
 Screenshot of Compass with the list of existing databases.
-
+![CompassExistingDatabases_Mi](CompassExistingDatabases_Mi.png)
 Take a look at your connection string and explain what the authSource=admin option does and why this parameter is so correct. (Look in the sources)
 
 In the cloud-init you will find the Linux command sed twice. 
