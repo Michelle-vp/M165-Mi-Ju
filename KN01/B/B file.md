@@ -1,7 +1,7 @@
 ### Warum wurde das Datum nicht korrekt gespeichert?
 
-MongoDB speichert einen String wie `"2004-03-24"` automatisch als String, auch wenn es wie ein Datum aussieht.
-Damit MongoDB es als echtes Datum erkennt, müsste das Feld so eingefügt werden:
+MongoDB automatically saves a string like `"2004-03-24"` as a String, even if it looks like a date.
+so that MongoDB can recognize it as a date, it has to look like this:
 
 ```
 {
@@ -9,16 +9,13 @@ Damit MongoDB es als echtes Datum erkennt, müsste das Feld so eingefügt werden
 }
 ```
 
-Nur dieses spezielle Format `($date)` sagt MongoDB, dass es sich um ein Datum handelt.
-Im Compass-UI wird es beim Einfügen standardmäßig als String gespeichert, deshalb musste man den Datentyp manuell auf Date ändern.
+Only this speciall format `($date)` tells MongoDB that its a date.
 
 ### Wieso ist dieser komplizierte Weg notwendig, um ein Datum zu definieren?
 
-MongoDB ist eine dokumentbasierte Datenbank und verwendet JSON.
-In normalem JSON gibt es keinen Datentyp für Datum, deshalb braucht MongoDB dieses spezielle $date-Format.
-
-Wenn man über das UI ein Dokument einfügt, geht Mongo davon aus, dass `"2004-03-24"` nur ein Text ist.
-Ohne explizite Angabe im $date-Format kann MongoDB also nicht wissen, dass es sich um ein Datum handeln soll.
+MongoDB is a dokumentbased Database and uses JSON.
+In normal JSON there is no type for a date, thats why MongoDB needs this speciall $date-Format.
+So Mongo automatically asumes its a String, unless specified otherwhise.
 
 
 ![1](./1.png)
