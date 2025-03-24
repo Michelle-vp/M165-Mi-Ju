@@ -1,0 +1,8 @@
+Screenshot of Compass with the list of existing databases.
+
+Take a look at your connection string and explain what the authSource=admin option does and why this parameter is so correct. (Look in the sources)
+
+In the cloud-init you will find the Linux command sed twice. 
+Explain what the two commands do. (Look in the sources). They should explain why the two commands are necessary, or what the influence on our MongoDB is.
+
+Show a screenshot of the contents of the MongoDB configuration file in which the two replaced values are visible. For example, you can open the file with nano or use cat to display the content and filter it with grep.
