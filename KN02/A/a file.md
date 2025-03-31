@@ -2,10 +2,10 @@
 ![image](./image.png)
 ## explanation
 
-Movie: Represents a film, including attributes like title, release year, and duration.
-Actor: Contains information about people who act in movies (e.g. name, birth date, nationality).
-Director: Stores data about the person directing the movie, including name and stylistic focus.
-Genre: Represents the movie’s category such as Action, Romance, or Thriller.
+- Movie: Represents a film, including attributes like title, release year, and duration.
+- Actor: Contains information about people who act in movies (e.g. name, birth date, nationality).
+- Director: Stores data about the person directing the movie, including name and stylistic focus.
+- Genre: Represents the movie’s category such as Action, Romance, or Thriller.
 
 Relationships:
 A movie can feature multiple actors, and actors can participate in multiple movies (N:N).
