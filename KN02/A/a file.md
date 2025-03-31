@@ -1,5 +1,5 @@
 ### draw.io diagram: kn02_A_m165.drawio
-
+![image](./image.png)
 ## explanation
 
 Movie: Represents a film, including attributes like title, release year, and duration.
