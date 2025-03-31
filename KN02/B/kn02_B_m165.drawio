@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="MongoDB Logical Model - Movies" id="logical_model">
+    <mxGraphModel dx="1060" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Movie Document -->
+        <mxCell id="movie" value="Movie (Collection)" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="300" height="380" as="geometry"/>
+        </mxCell>
+
+        <!-- Movie Fields -->
+        <mxCell id="title" value="title: string" style="text" vertex="1" parent="movie">
+          <mxGeometry x="20" y="40" width="260" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="releaseYear" value="releaseYear: int" style="text" vertex="1" parent="movie">
+          <mxGeometry x="20" y="70" width="260" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="duration" value="duration: int" style="text" vertex="1" parent="movie">
+          <mxGeometry x="20" y="100" width="260" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="genres" value="genres: [string]" style="text" vertex="1" parent="movie">
+          <mxGeometry x="20" y="130" width="260" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Embedded Director -->
+        <mxCell id="director_box" value="director: { }" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="movie">
+          <mxGeometry x="20" y="160" width="260" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="director_name" value="name: string" style="text" vertex="1" parent="director_box">
+          <mxGeometry x="10" y="30" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="director_birth" value="birthDate: date" style="text" vertex="1" parent="director_box">
+          <mxGeometry x="10" y="50" width="240" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Embedded Actors -->
+        <mxCell id="actors_box" value="actors: [ ]" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="movie">
+          <mxGeometry x="20" y="250" width="260" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor_name" value="name: string" style="text" vertex="1" parent="actors_box">
+          <mxGeometry x="10" y="30" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor_role" value="role: string" style="text" vertex="1" parent="actors_box">
+          <mxGeometry x="10" y="50" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor_birth" value="birthDate: date" style="text" vertex="1" parent="actors_box">
+          <mxGeometry x="10" y="70" width="240" height="20" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
