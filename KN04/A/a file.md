@@ -1,11 +1,11 @@
 ## 2 $match
-![image](./2match.png)
+![image](./img/2match.png)
 
 ## $match, $project, $sort
-![image](./matchprojectsort.png)
+![image](./img/matchprojectsort.png)
 
 ## $sum
-![image](./sum.png)
+![image](./img/sum.png)
 
 ## $group
-![image](./group.png)
+![image](./img/group.png)
