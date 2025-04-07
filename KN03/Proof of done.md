@@ -9,6 +9,11 @@
 ![DeleteAllMovies](./Screenshots/DeleteAllMovies.png)
 ![DeleteAllDirectors](./Screenshots/DeleteAllDirectors.png)
 ### delete selected
+![DirectorsBeforeDeleteSelected](./Screenshots/DirectorsBeforeDeleteSelected.png)
+![MoviesBeforeDeleteSelected](./Screenshots/MoviesBeforeDeleteSelected.png)
+![DeleteSelectedCommand](./Screenshots/DeleteSelectedCommand.png)
+![DeleteSelectedDirectors](./Screenshots/DeleteSelectedDirectors.png)
+![DeleteSelectedMovies](./Screenshots/DeleteSelectedMovies.png)
 ## query
 ![Query1](./Screenshots/Query1.png)
 ![Query2](./Screenshots/Query2.png)
