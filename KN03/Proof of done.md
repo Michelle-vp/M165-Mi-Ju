@@ -20,3 +20,6 @@
 ![Query3](./Screenshots/Query3.png)
 ![Query4](./Screenshots/Query4.png)
 ## update
+![MoviesBeforeUpdate](./Screenshots/MoviesBeforeUpdate.png)
+![UpdateCommand](./Screenshots/UpdateCommand.png)
+![UpdateMovies](./Screenshots/UpdateMovies.png)
