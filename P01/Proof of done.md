@@ -1,21 +1,23 @@
 # URL/IP Screenshots
-  ![InsertCommand](./Screenshots/3000-Grafana.png)
-  ![InsertCommand](./Screenshots/3000-metrics.png)
-  ![InsertCommand](./Screenshots/9090-Prometheus.png)
-  ![InsertCommand](./Screenshots/9100-metrics.png)
+  ![3000-Grafana](./Screenshots/3000-Grafana.png)
+  ![3000-metrics](./Screenshots/3000-metrics.png)
+  ![9090-Prometheus](./Screenshots/9090-Prometheus.png)
+  ![9100-metrics](./Screenshots/9100-metrics.png)
 # Cloud Init Explanations
 * What are scrapes? Explain the term in the context of Prometheus and give concrete examples.
   In Prometheus we call scrapes to the process of periodically collecting metric data from different monitored targets or services. Prometheus fetches metrics exposed by applications or systems on HTTP endpoints at regular intervals.
 Example:
+  ![ScrapExample](./Screenshots/ScrapExample.png)
 
 * What are Rules? Explain the term in the context of Prometheus and give concrete examples.
   Rules in Prometheus allow defining alerting conditions and pre-calculated expressions (recording rules) based on metric data. They are useful for simplifying complex queries and generating alerts when certain thresholds or conditions are met.There are two main types:
 Recording rules: Save results of frequent queries to reuse later efficiently.
 Alerting rules: Define conditions under which alerts will fire.
   Examples:
+  ![RulesExample](./Screenshots/RulesExample.png)
+  ![RulesAlertExample](./Screenshots/RulesAlertExample.png)
 * What are the steps you need to take as a programmer to store your own data in Prometheus?
  First we expose Metrics, meaning that our application must expose metrics in a Prometheus-compatible format (usually via HTTP on /metrics endpoint). Some example of libraries are Prometheus client libraries (Python, Java, Go, etc.). Then we configure Scraping, we do this by editing the Prometheus configuration file (prometheus.yml) to add our application as a scrape target. And as the last step we restart Prometheus.
-Example:
 
 Add your application URL to Prometheus configuration (prometheus.yml):
 * Which variables are used in the scrapes and rules and from which pages/URLs do these variables come?
